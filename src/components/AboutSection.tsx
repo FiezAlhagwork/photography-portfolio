@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Accordions } from "../constant";
 import { IoMdClose } from "react-icons/io";
 import { GoPlus } from "react-icons/go";
+import {AnimatePresence, motion } from "framer-motion"
+import { animationVariants } from "../utils";
+
 
 
 
@@ -13,17 +16,24 @@ const AboutSection = () => {
     setOpenSection(openSection === section ? null : section);
   };
   return (
+    <AnimatePresence>
     <div className="bg-Smoke_White my-16">
-      <div className=" containers flex-col flex lg:flex-row justify-between items-center py-20    ">
+      <motion.div className=" containers flex-col flex lg:flex-row justify-between items-center py-20    ">
 
-        <div className="lg:w-[450px] w-full text-center mx-16 order-2 ">
+        <motion.div className="lg:w-[450px] w-full text-center mx-16 order-2 " 
+            variants={animationVariants} 
+            custom="right" 
+            initial="hidden"
+            whileInView="visible"      
+            transition={{ duration: 0.8 }}   
+            viewport={{ once: true, amount: 0.2 }} >
           <div>
             <h2 className="text-3xl font-bold text-Black font-libre">
-              Hello! I'm Oliver Bennett
+              Hello! I'm Abdullah
             </h2>
             <p className="pt-1 pb-5 font-extralight text-lg">
               A connoisseur of cityscapes and a storyteller through the lens,
-              based in the vibrant heart of London.{" "}
+              based in the vibrant heart of Damascus.{" "}
             </p>
             <p className=" font-extralight text-lg">
               With over a decade of experience, I have been capturing the
@@ -53,14 +63,23 @@ const AboutSection = () => {
             })}
           </div>
            {/*================= end Accordions =============== */}
-        </div>
+        </motion.div>
 
-        <div className="relative lg:ml-16 order-1 py-5">
-            <img src="./image6.png" alt="" className="w-[500px] h-[600px] object-contain" />
-        </div>
+        <motion.div 
+         className="relative lg:ml-16 order-1 py-5"
+         variants={animationVariants} 
+         custom="left" 
+         initial="hidden"
+         whileInView="visible"      
+         transition={{ duration: 0.8 }}   
+         viewport={{ once: true, amount: 0.2 }} 
+         >
+            <img src="./abd.jpg" alt="" className="w-[500px] h-[600px] object-contain" />
+        </motion.div>
         
-      </div>
+      </motion.div>
     </div>
+    </AnimatePresence>
   );
 };
 
