@@ -1,14 +1,10 @@
 import  { useState, useCallback, useEffect } from "react";
 import Modal from "react-modal";
 import { IoMdClose } from "react-icons/io";
+import { Photo } from "../types";
 
 
-// تعريف نوع الصورة Photo
-interface Photo {
-  id: number;
-  src: string;
-  alt: string;
-}
+
 
 const photos: Photo[] = [
   { id: 1, src: "./headar1.jpg", alt: "Photo 1" },

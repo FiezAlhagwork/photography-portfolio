@@ -11,4 +11,10 @@ export interface ButtonProps {
     onclick?: () => void;
     children: React.ReactNode;
   }
+
+  export interface Photo {
+    id: number;
+    src: string;
+    alt: string;
+  }
   
