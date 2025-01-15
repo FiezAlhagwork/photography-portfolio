@@ -10,22 +10,7 @@ const Gallery = () => {
           Some of my latest shots
         </h2>
       </motion.div>
-
-      {/* <div className="grid grid-cols-12  gap-5 p-4 mt-3  ">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`${image.cols} ${image.rows} relative overflow-hidden rounded-lg shadow-lg   `}
-          >
-            <img
-              src={image.src}
-              alt={`Gallery Image ${index + 1}`}
-              className="w-full h-full object-fill transform duration-300 hover:scale-105"
-            />
-          </div>
-        ))}
-      </div> */}
-      <div className=" flex justify-center items-center">
+      <div className=" flex justify-center items-center mt-5">
 
         <PhotoGallery/>
       </div>
