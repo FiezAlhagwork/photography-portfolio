@@ -15,6 +15,12 @@ const AboutSection = () => {
   const toggleSection = (section: string) => {
     setOpenSection(openSection === section ? null : section);
   };
+
+  const accordionAnimation = {
+    hidden: { opacity: 0, height: 0 },
+    visible: { opacity: 1, height: "auto" },
+    exit: { opacity: 0, height: 0 },
+  };
   return (
     <AnimatePresence>
     <div className="bg-Smoke_White my-16">
@@ -42,26 +48,37 @@ const AboutSection = () => {
           </div>
 
             {/*================= start Accordions =============== */}
-          <div className="mt-3 ">
-            {Accordions.map((items) => {
-                return(
-                    <div >
-                    <button
-                      className="flex justify-between w-full py-2 text-left text-sm  font-Montserrat font-medium focus:outline-none border-t "
-                      onClick={() => toggleSection(items.nameAccordin)}
-                    >
-                        <span> My {items.nameAccordin}</span>
-                      {openSection === items.nameAccordin ? <IoMdClose size={20}/> : <GoPlus size={20}/>}
-                    </button>
-                    {openSection === items.nameAccordin && (
-                      <div className="p-2 text-sm text-gray-700">
-                            {items.section}
-                      </div>
-                    )}
-                  </div>
-                )
-            })}
-          </div>
+            <div className="mt-3">
+      {Accordions.map((items) => (
+        <div key={items.nameAccordin}>
+          <button
+            className="flex justify-between w-full py-2 text-left text-sm font-Montserrat font-medium focus:outline-none border-t"
+            onClick={() => toggleSection(items.nameAccordin)}
+          >
+            <span>My {items.nameAccordin}</span>
+            {openSection === items.nameAccordin ? (
+              <IoMdClose size={20} />
+            ) : (
+              <GoPlus size={20} />
+            )}
+          </button>
+          <motion.div
+            initial="hidden" // الحالة الابتدائية
+            animate={openSection === items.nameAccordin ? "visible" : "hidden"} // تحديد الحالة
+            exit="exit" // عند الإغلاق
+            variants={accordionAnimation} // الحركات المخصصة
+            transition={{ duration: 0.3 }} // مدة الانتقال
+            style={{ overflow: "hidden" }} // لمنع تجاوز المحتوى
+          >
+            {openSection === items.nameAccordin && (
+              <div className="p-2 text-sm text-gray-700">
+                {items.section}
+              </div>
+            )}
+          </motion.div>
+        </div>
+      ))}
+    </div>
            {/*================= end Accordions =============== */}
         </motion.div>
 

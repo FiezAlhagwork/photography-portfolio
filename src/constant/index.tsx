@@ -49,3 +49,15 @@ export const Accordions = [
       " My photography journey began on the bustling streets of London,starting as a hobby and quickly blossoming into a fervent passion.",
   },
 ];
+
+ export const images = [
+  { src: "./gallery14.jpg", cols: "col-span-8", rows: "row-span-1" },
+  { src: "./gallery8.jpg", cols: "col-span-4", rows: "row-span-1" },
+  { src: "./gallery12.jpg", cols: "col-span-5", rows: "row-span-1" },
+  { src: "./gallery1.jpg", cols: "col-span-7", rows: "row-span-1" },
+  { src: "./gallery7.jpg", cols: "col-span-4", rows: "row-span-1" },
+  { src: "./gallery2.jpg", cols: "col-span-8", rows: "row-span-1" },
+  { src: "./gallery9.jpg", cols: "col-span-7", rows: "row-span-1" },
+  { src: "./gallery10.jpg", cols: "col-span-5", rows: "row-span-1" },
+
+];

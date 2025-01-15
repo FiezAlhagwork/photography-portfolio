@@ -48,3 +48,27 @@
 .flex__center{
     @apply flex justify-center items-center
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-container {
+  position: relative;
+  /* background: white; */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 90%;
+  max-width: 700px;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
