@@ -4,9 +4,9 @@ import PhotoGallery from "./PhotoGallery";
 
 const Gallery = () => {
   return (
-    <div className="mx-9">
+    <div className="mx-9 my-16">
       <motion.div>
-        <h2 className="text-3xl text-center font-libre text-Black ">
+        <h2 className="text-3xl text-center font-libre text-Black mb-10 ">
           Some of my latest shots
         </h2>
       </motion.div>

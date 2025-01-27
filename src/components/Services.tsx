@@ -3,7 +3,7 @@ import { services } from "../constant";
 
 const Services = () => {
   return (
-    <section className="py-16 my-16 mb  bg-Smoke_White">
+    <section className="py-16 mt-16 mb  bg-Smoke_White">
       <div className=" containers  px-6">
         <h2 className="text-3xl text-center font-libre text-Black  mb-10">
           Our Services
