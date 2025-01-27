@@ -10,7 +10,7 @@ const Gallery = () => {
           Some of my latest shots
         </h2>
       </motion.div>
-      <div className=" flex justify-center items-center mt-5">
+      <div className=" flex justify-center items-center my-5 ">
 
         <PhotoGallery/>
       </div>
