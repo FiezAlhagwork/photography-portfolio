@@ -96,7 +96,7 @@ export default function PhotoGallery() {
             className="cursor-pointer relative"
             onClick={() => openModal(photo)}
             variants={animationVariants}
-            custom="down"
+            custom="left"
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.8 }}

@@ -2,6 +2,8 @@ import { NavBar } from "../types";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaVideo, FaPalette, FaMagic, FaCamera, FaMobileAlt, FaBriefcase } from "react-icons/fa";
+
 
 export const navbar: NavBar[] = [
   { id: 1, Link: "/", name: "Home" },
@@ -60,4 +62,44 @@ export const Accordions = [
   { src: "./gallery9.jpg", cols: "col-span-7", rows: "row-span-1" },
   { src: "./gallery10.jpg", cols: "col-span-5", rows: "row-span-1" },
 
+];
+
+
+export const services = [
+  {
+    id: 1,
+    icon: <FaVideo size={40} className="text-Yellow" />,
+    title: "Video Editing",
+    description: "Professional video editing to transform your footage into compelling stories.",
+  },
+  {
+    id: 2,
+    icon: <FaPalette size={40} className="text-Yellow" />,
+    title: "Color Grading & Correction",
+    description: "Enhancing video colors to give a cinematic and professional look.",
+  },
+  {
+    id: 3,
+    icon: <FaMagic size={40} className="text-Yellow" />,
+    title: "Motion Graphics & VFX",
+    description: "Adding visual effects and motion graphics for dynamic video content.",
+  },
+  {
+    id: 4,
+    icon: <FaCamera size={40} className="text-Yellow" />,
+    title: "Photography & Editing",
+    description: "Capturing and editing stunning photos for various occasions.",
+  },
+  {
+    id: 5,
+    icon: <FaMobileAlt size={40} className="text-Yellow" />,
+    title: "Social Media Content",
+    description: "Creating engaging video content optimized for social media platforms.",
+  },
+  {
+    id: 6,
+    icon: <FaBriefcase size={40} className="text-Yellow" />,
+    title: "Corporate & Event Videography",
+    description: "Filming and editing business and event videos with high quality.",
+  },
 ];
