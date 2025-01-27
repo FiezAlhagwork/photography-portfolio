@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaVideo, FaPalette, FaMagic, FaCamera, FaMobileAlt, FaBriefcase } from "react-icons/fa";
 
 
+
 export const navbar: NavBar[] = [
   { id: 1, Link: "/", name: "Home" },
   { id: 2, Link: "/About", name: "About" },
@@ -68,37 +69,37 @@ export const Accordions = [
 export const services = [
   {
     id: 1,
-    icon: <FaVideo size={40} className="text-Yellow" />,
+    icon: <FaVideo size={30}  />,
     title: "Video Editing",
     description: "Professional video editing to transform your footage into compelling stories.",
   },
   {
     id: 2,
-    icon: <FaPalette size={40} className="text-Yellow" />,
+    icon: <FaPalette size={30}  />,
     title: "Color Grading & Correction",
     description: "Enhancing video colors to give a cinematic and professional look.",
   },
   {
     id: 3,
-    icon: <FaMagic size={40} className="text-Yellow" />,
+    icon: <FaMagic size={30}  />,
     title: "Motion Graphics & VFX",
     description: "Adding visual effects and motion graphics for dynamic video content.",
   },
   {
     id: 4,
-    icon: <FaCamera size={40} className="text-Yellow" />,
+    icon: <FaCamera size={30}  />,
     title: "Photography & Editing",
     description: "Capturing and editing stunning photos for various occasions.",
   },
   {
     id: 5,
-    icon: <FaMobileAlt size={40} className="text-Yellow" />,
+    icon: <FaMobileAlt size={30}  />,
     title: "Social Media Content",
     description: "Creating engaging video content optimized for social media platforms.",
   },
   {
     id: 6,
-    icon: <FaBriefcase size={40} className="text-Yellow" />,
+    icon: <FaBriefcase size={30}  />,
     title: "Corporate & Event Videography",
     description: "Filming and editing business and event videos with high quality.",
   },
