@@ -104,3 +104,21 @@ export const services = [
     description: "Filming and editing business and event videos with high quality.",
   },
 ];
+
+export const testimonials = [
+  {
+    text: "Oliver's unique eye for urban landscapes has brought our campaign to life. His ability to capture the soul of the city is unparalleled.",
+    author: "Emily Clark",
+    role: "Marketing Director - Cityscape Magazine",
+  },
+  {
+    text: "I hired Oliver for a personal photoshoot, and he exceeded all expectations. His work is not just photography; it's storytelling at its finest.",
+    author: "Liam Thompson",
+    role: "Entrepreneur",
+  },
+  {
+    text: "Oliver's workshop opened my eyes to the beauty of urban photography. His guidance and techniques were invaluable. A true master of his craft!",
+    author: "Sarah Jenkins",
+    role: "Aspiring Photographer",
+  },
+];

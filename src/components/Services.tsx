@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { services } from "../constant";
+import { animationVariants } from "../utils";
 
 const Services = () => {
   return (
@@ -12,22 +13,29 @@ const Services = () => {
           {services.map((service) => (
             <motion.div
               key={service.id}
-              className= "group bg-White p-6 rounded-2xl shadow-lg flex flex-col   transition-all hover:shadow-xl hover:bg-Yellow"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: service.id * 0.1 }}
+              className="group bg-White p-6 rounded-2xl shadow-lg flex flex-col  hover:shadow-xl hover:bg-Yellow"
+              variants={animationVariants}
+              custom="down"
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <div className="mb-4 w-16 h-16 bg-Yellow text-White group-hover:bg-White group-hover:text-Yellow rounded-full flex justify-center items-center">
                 <div>{service.icon}</div>
               </div>
-              <h3 className="text-xl py-4 font-Montserrat font-semibold text-Black group-hover:text-White">{service.title}</h3>
-              <p className="text-gray-500 mt-2 group-hover:text-White">{service.description}</p>
+              <h3 className="text-xl py-4 font-Montserrat font-semibold text-Black group-hover:text-White">
+                {service.title}
+              </h3>
+              <p className="text-gray-500 mt-2 group-hover:text-White">
+                {service.description}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
