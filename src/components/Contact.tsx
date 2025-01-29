@@ -70,6 +70,7 @@ const Contact = () => {
         setMessage("The operation was successful!");
         setShowModal(true);
         setFormData({ fullname: "", email: "", message: "", phoneNumber: "" });
+        setError("")
       }
     } catch (error) {
       console.log(error);
