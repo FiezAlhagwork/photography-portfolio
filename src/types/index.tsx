@@ -28,4 +28,17 @@ export interface TextFieldProps {
   icon?: React.ReactNode;
   className?: string;
   coustomClassDiv?:string
+  name:string
+}
+
+export interface ContactFormData  {
+  fullname: string
+  email: string
+  phoneNumber: string
+  message: string
+}
+
+export interface ModalProps {
+  message : string
+  onClose : () => void
 }

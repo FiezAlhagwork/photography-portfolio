@@ -39,3 +39,10 @@ export const animationVariants = {
     },
     visible: { opacity: 1, x: 0, y: 0 }, // العنصر في مكانه الطبيعي
   };
+
+
+  export const validateEmail = (email:string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+  
