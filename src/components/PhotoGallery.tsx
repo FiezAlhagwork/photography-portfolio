@@ -95,6 +95,12 @@ export default function PhotoGallery() {
             key={photo.id}
             className="cursor-pointer relative"
             onClick={() => openModal(photo)}
+            variants={animationVariants}
+            custom="left"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
  
           >
             <motion.div className="group flex justify-center items-center  w-full  h-[270px] absolute opacity-40 z-10 top-0 left-0 hover:bg-gray-500 rounded-lg transition-all duration-400 ">

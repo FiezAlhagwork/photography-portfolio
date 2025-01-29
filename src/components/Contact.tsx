@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="containers flex flex-col md:flex-row max-md:justify-center justify-around items-center   ">
         {/* Contact Header */}
         <div className=" max-w-80  md:ml-10 max-md:py-6 relative grid  ">
-            <img src="./Misc.png" alt="" className=" absolute -top-6 -left-9 w-10 h-10" />
+            <img src="./Misc.png" alt="" className=" absolute -top-6 -left-9 max-md:-top-1 max-md:-left-7 w-10 h-10"  />
           <h2 className="text-4xl text-Smoke_White font-libre font-bold leading-[44px] ">
             {" "}
             <span className="text-Yellow">I’d love</span> to hear from you .
