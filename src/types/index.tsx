@@ -39,6 +39,6 @@ export interface ContactFormData  {
 }
 
 export interface ModalProps {
-  message : string
+  message? : string
   onClose : () => void
 }

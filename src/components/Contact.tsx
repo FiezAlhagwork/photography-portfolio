@@ -14,16 +14,20 @@ const Contact = () => {
     phoneNumber: "",
     message: "",
   });
-  const [error, setError] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+
+  const [status, setStatus] = useState<{ error?: string; message?: string }>(
+    {}
+  );
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prevState => ({ ...prevState, [e.target.name]: e.target.value }));
   };
+
+
 
   const services = import.meta.env.VITE_SERVICES;
   const template = import.meta.env.VITE_TEMPLATE;
@@ -31,23 +35,25 @@ const Contact = () => {
 
   const handleSubmitData = async (e: FormEvent) => {
     e.preventDefault();
+
     if (!formData.fullname) {
-      setError("Please the Enter Full Name");
+      setStatus({ error: "Please the Enter Full Name" });
       return;
     }
 
     if (!validateEmail(formData.email)) {
-      setError("please Enter a valid email address");
+      setStatus({ error: "Please Enter a valid email address" });
       return;
     }
 
     if (!formData.phoneNumber) {
-      setError("Please the Enter Phone Number");
+      setStatus({ error: "Please the Enter Phone Number" });
+
       return;
     }
 
     if (!formData.message) {
-      setError("Please the Enter message");
+      setStatus({ error: "Please the Enter message" });
       return;
     }
 
@@ -67,13 +73,15 @@ const Contact = () => {
       );
 
       if (result.status === 200 && result.text === "OK") {
-        setMessage("The operation was successful!");
+        setStatus({ message: "The operation was successful!" });
         setShowModal(true);
         setFormData({ fullname: "", email: "", message: "", phoneNumber: "" });
-        setError("")
+        setStatus({ error: "" });
       }
     } catch (error) {
-      console.log(error);
+      if (error) {
+        setStatus({ error: "Opss Failed to fetch Please try agien" });
+      }
     } finally {
       setLoading(false);
     }
@@ -146,17 +154,20 @@ const Contact = () => {
 
             <Button
               type="submit"
-              className="text-Black bg-Yellow w-full font-medium "
+              className="text-Black bg-Yellow w-full font-medium"
+              disabled={loading}
             >
               Submit
             </Button>
 
-            <span className="text-red-500 text-sm py-4">{error}</span>
+            <span className="text-red-500 text-sm pt-3 block pl-3">
+              {status.error}
+            </span>
           </form>
         </div>
         {showModal && (
           <Modal
-            message={message}
+            message={"The operation was successful!"}
             onClose={() => {
               setShowModal(false);
             }}

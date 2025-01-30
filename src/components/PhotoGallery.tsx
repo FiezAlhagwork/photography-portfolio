@@ -103,7 +103,7 @@ export default function PhotoGallery() {
             viewport={{ once: true, amount: 0.2 }}
  
           >
-            <motion.div className="group flex justify-center items-center  w-full  h-[270px] absolute opacity-40 z-10 top-0 left-0 hover:bg-gray-500 rounded-lg transition-all duration-400 ">
+            <motion.div className="group flex justify-center items-center  w-full  h-[270px] absolute hover:bg-opacity-30  0 z-10 top-0 left-0 hover:bg-gray-500 rounded-lg transition-all duration-400 ">
               <GrView
                 size={30}
                 className=" hidden font-bold text-White z-20  group-hover:block"
