@@ -122,3 +122,44 @@ export const testimonials = [
     role: "Aspiring Photographer",
   },
 ];
+
+
+export const videoProjects = [
+  {
+    id: 1,
+    title: 'مشروع فيديو 1',
+    thumbnail: './reels3.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698898/lv_7320806994355571986_20240902015420_s818ar.mp4'
+  },
+  {
+    id: 2,
+    title: 'مشروع فيديو 2',
+    thumbnail: './reels.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698703/lv_7227878550014151942_20240921020605_ncvfuo.mp4'
+              // "https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698703/lv_7227878550014151942_20240921020605_ncvfuo.mp4"
+  },
+  {
+    id: 3,
+    title: 'مشروع فيديو 3',
+    thumbnail: './reels4.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739696366/lv_0_20240602193947_b7fnmx.mp4'
+  },
+  {
+    id: 4,
+    title: 'مشروع فيديو 4',
+    thumbnail: './reels1.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698534/lv_0_20240726220901_z4wwut.mp4'
+  },
+  {
+    id: 5,
+    title: 'مشروع فيديو 5',
+    thumbnail: './reels5.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698358/lv_0_20240717181229_dxnzwx.mp4'
+  },
+  {
+    id: 6,
+    title: 'مشروع فيديو 6',
+    thumbnail: './reels6.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698245/lv_0_20240715165717_bi18fp.mp4'
+  },
+];

@@ -11,7 +11,7 @@ const Modal = ({ message, onClose }: ModalProps) => {
           <MdDone size={30} className=" text-Yellow font-extrabold " />
         </div>
 
-        <h2 className="text-xl font-bold text-Black pt-4"> Success</h2>
+        <h2 className="text-xl font-bold text-Black pt-4">Success</h2>
         <p className="mt-2  font-Montserrat font-normal-medium text-gray-600">
           {message}
         </p>

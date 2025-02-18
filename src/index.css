@@ -72,3 +72,15 @@
   padding: 1rem;
   animation: fadeIn 0.3s ease-in-out;
 }
+
+
+/* تغيير لون النقطة النشطة */
+.swiper-pagination-bullet-active {
+  background-color: #FEE400 !important;
+}
+
+/* تغيير لون أسهم التنقل إلى الأصفر */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #FEE400 !important;
+}
