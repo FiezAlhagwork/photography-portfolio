@@ -19,7 +19,7 @@ const Portfolio = () => {
       </div>
       <div className="my-5">
         <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> Video</h1>
-        <VideoGallery videos={videoProjects2} heightVideo='h-[300px] ' slidesPerView={[1,1,2,3]}/>
+        <VideoGallery videos={videoProjects2} heightVideo='h-[300px]' slidesPerView={[1,1,2,3]}/>
       </div>
     </div>
   )

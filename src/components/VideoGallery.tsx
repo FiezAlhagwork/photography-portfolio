@@ -19,12 +19,12 @@ const VideoGallery = ({heightVideo , videos , slidesPerView}:VideoGalleryProps) 
         pagination={{ clickable: true }}
         navigation
         modules={[Pagination, Navigation]}
-        className={`w-full h-[600px] ${heightVideo} `}
+        className={`w-full  ${heightVideo} `}
         breakpoints={{
-          320: { slidesPerView: slidesPerView[0] },
-          640: { slidesPerView: slidesPerView[1] },
-          1024: { slidesPerView: slidesPerView[2] },
-          1280: { slidesPerView: slidesPerView[3] }
+          320: { slidesPerView: slidesPerView[0]},
+          640: { slidesPerView: slidesPerView[1]},
+          1024: { slidesPerView: slidesPerView[2]},
+          1280: { slidesPerView: slidesPerView[3]}
         }}
       >
         {videos.map((video) => (
