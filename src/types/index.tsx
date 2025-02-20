@@ -42,3 +42,17 @@ export interface ModalProps {
   message? : string
   onClose : () => void
 }
+
+export interface videos {
+  id: number,
+  title: string,
+  thumbnail: string,
+  videoUrl: string
+}
+
+
+export interface VideoGalleryProps {
+  heightVideo :string
+  videos:videos[]
+  slidesPerView:number[]
+}

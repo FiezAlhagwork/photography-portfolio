@@ -1,4 +1,4 @@
-import { NavBar } from "../types";
+import { NavBar, videos } from "../types";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -124,7 +124,7 @@ export const testimonials = [
 ];
 
 
-export const videoProjects = [
+export const videoProjects:videos[] = [
   {
     id: 1,
     title: 'مشروع فيديو 1',
@@ -161,5 +161,32 @@ export const videoProjects = [
     title: 'مشروع فيديو 6',
     thumbnail: './reels6.PNG',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698245/lv_0_20240715165717_bi18fp.mp4'
+  },
+];
+
+export const videoProjects2:videos[] = [
+  {
+    id: 1,
+    title: 'مشروع فيديو 1',
+    thumbnail: './video1.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
+  },
+  {
+    id: 2,
+    title: 'مشروع فيديو 2',
+    thumbnail: './video1.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
+  },
+  {
+    id: 3,
+    title: 'مشروع فيديو 3',
+    thumbnail: './video1.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
+  },
+  {
+    id: 4,
+    title: 'مشروع فيديو 4',
+    thumbnail: './video1.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
   },
 ];

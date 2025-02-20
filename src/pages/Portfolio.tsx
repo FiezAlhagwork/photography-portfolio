@@ -1,17 +1,11 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
-import { videoProjects } from '../constant';
+
+import { videoProjects, videoProjects2 } from '../constant';
 import 'swiper/swiper-bundle.css';
-import { useState } from 'react';
+import VideoGallery from '../components/VideoGallery';
 
 
 const Portfolio = () => {
 
-  const [activeVideo, setActiveVideo] = useState<null | number>(null);
-
-  const handleVideoClick = (id:number) => {
-    setActiveVideo(id);
-  };
 
   return (
     <div className="px-8 w-full  ">
@@ -21,43 +15,11 @@ const Portfolio = () => {
       </div>
       <div className="my-5">
         <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  ">Short and Reels</h1>
-        <Swiper
-        slidesPerView={4}
-        spaceBetween={20}
-        pagination={{ clickable: true }}
-        navigation
-        modules={[Pagination, Navigation]}
-        className="w-full h-[600px] "
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-          1280: { slidesPerView: 4 }
-        }}
-      >
-        {videoProjects.map((video) => (
-          <SwiperSlide key={video.id}>
-           <div className="w-full h-full relative cursor-pointer  " onClick={() => handleVideoClick(video.id)}>
-              {activeVideo === video.id ? (
-                <video
-                  src={video.videoUrl}
-                  controls
-                  autoPlay
-                  className="w-[400px] h-full object-cover rounded-lg"
-                  preload="metadata"
-                ></video>
-              ) : (
-                <img
-                  src={video.thumbnail}
-                  alt={video.title}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              )}
-              <p className="text-white text-center mt-2">{video.title}</p>
-            </div>  
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <VideoGallery videos={videoProjects} heightVideo='h-[600px]' slidesPerView={[1,2,3,4]}/>
+      </div>
+      <div className="my-5">
+        <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> Video</h1>
+        <VideoGallery videos={videoProjects2} heightVideo='h-[300px] ' slidesPerView={[1,1,2,3]}/>
       </div>
     </div>
   )
