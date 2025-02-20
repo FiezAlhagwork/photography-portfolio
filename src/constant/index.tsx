@@ -174,19 +174,14 @@ export const videoProjects2:videos[] = [
   {
     id: 2,
     title: 'مشروع فيديو 2',
-    thumbnail: './video1.PNG',
-    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
+    thumbnail: './video2.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1740062612/Sequence_06_zqm8jk.mp4'
   },
   {
     id: 3,
     title: 'مشروع فيديو 3',
-    thumbnail: './video1.PNG',
-    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
+    thumbnail: './video3.PNG',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1740062805/Sequence_04_untofo.mp4'
   },
-  {
-    id: 4,
-    title: 'مشروع فيديو 4',
-    thumbnail: './video1.PNG',
-    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
-  },
+
 ];
