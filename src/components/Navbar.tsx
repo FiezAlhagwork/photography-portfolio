@@ -12,7 +12,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="bg-White border-b border-gray-200 py-3 ">
+    <div className="bg-White border-b border-gray-400 py-3 ">
       <div className="containers flex justify-between items-center  ">
         {/* navbar in mobile */}
         <ul className={`lg:flex items-center gap-3  hidden`}>
@@ -33,25 +33,32 @@ const Navbar = () => {
         {/* Logo */}
         <div className="lg:ml-20 flex justify-center items-center flex-col ">
           <h4 className="font-libre "> Abd Alahh</h4>
-          <p className="text-[13px] text-Grey uppercase">street photography</p>
+          <p className="text-[13px] text-gray-900 uppercase">
+            street photography
+          </p>
         </div>
 
         {/* socialMedia */}
         <ul className="hidden  lg:flex gap-4 items-center ">
           {socialMedia.map((item) => {
             return (
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <li
-                  className="w-10 h-10 border-2 border-Black flex justify-center items-center rounded-full hover:bg-Black hover:text-White transition-colors duration-200"
+              <li  key={item.id} className="w-10 h-10 border-2 border-Black flex justify-center items-center rounded-full hover:bg-Black hover:text-White transition-colors duration-200">
+                <a
                   key={item.id}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.ariaLabel}
                 >
                   {item.icon}
-                </li>
-              </a>
+                </a>
+              </li>
             );
           })}
           <li>
-            <Button className="text-White bg-Black">Let's Tailk</Button>
+            <Button className="text-White bg-Black" aria_label="Let's Tailk">
+              Let's Tailk
+            </Button>
           </li>
         </ul>
 
@@ -84,7 +91,6 @@ const Navbar = () => {
             <CiMenuBurger size={25} className="text-Black" />
           </button>
         </div>
-
       </div>
     </div>
   );

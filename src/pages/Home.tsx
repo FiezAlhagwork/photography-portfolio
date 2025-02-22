@@ -18,7 +18,6 @@ const Home = () => {
         <Testimonial/>
         <Contact/>
         <Footer/>
-        
     </>
   )
 }

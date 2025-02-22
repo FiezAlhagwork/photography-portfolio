@@ -54,6 +54,7 @@ const AboutSection = () => {
           <button
             className="flex justify-between w-full py-2 text-left text-sm font-Montserrat font-medium focus:outline-none border-t"
             onClick={() => toggleSection(items.nameAccordin)}
+            aria-label="Accordions"
           >
             <span>My {items.nameAccordin}</span>
             {openSection === items.nameAccordin ? (
@@ -91,7 +92,7 @@ const AboutSection = () => {
          transition={{ duration: 0.8 }}   
          viewport={{ once: true, amount: 0.2 }} 
          >
-            <img src="./abd.jpg" alt="" className="w-[500px] h-[600px] object-contain" />
+            <img src="./abd.jpg" className="w-[500px] h-[600px] object-contain" loading="lazy" alt="image" />
         </motion.div>
         
       </motion.div>

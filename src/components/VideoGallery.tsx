@@ -44,6 +44,7 @@ const VideoGallery = ({heightVideo , videos , slidesPerView}:VideoGalleryProps) 
                   src={video.thumbnail}
                   alt={video.title}
                   className="w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               )}
               <p className="text-white text-center mt-2">{video.title}</p>

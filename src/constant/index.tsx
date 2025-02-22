@@ -1,4 +1,4 @@
-import { NavBar, videos } from "../types";
+import { NavBar, Photo, videos } from "../types";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -13,16 +13,18 @@ export const navbar: NavBar[] = [
 ];
 
 export const socialMedia = [
-  { id: 1, icon: <FaFacebookF size={15} />, link: "" },
+  { id: 1, icon: <FaFacebookF size={15} />, link: "" , ariaLabel:"زيارة فيسبوك" },
   {
     id: 2,
     icon: <FaInstagram size={15} />,
     link: "https://www.instagram.com/saqalah.9?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    ariaLabel:"زيارة انستغرام "
   },
   {
     id: 3,
     icon: <FaWhatsapp size={15} />,
     link: "https://wa.me/992965934?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83.",
+    ariaLabel:"زيارة واتس اب "
   },
 ];
 
@@ -53,18 +55,14 @@ export const Accordions = [
   },
 ];
 
- export const images = [
-  { src: "./gallery14.jpg", cols: "col-span-8", rows: "row-span-1" },
-  { src: "./gallery8.jpg", cols: "col-span-4", rows: "row-span-1" },
-  { src: "./gallery12.jpg", cols: "col-span-5", rows: "row-span-1" },
-  { src: "./gallery1.jpg", cols: "col-span-7", rows: "row-span-1" },
-  { src: "./gallery7.jpg", cols: "col-span-4", rows: "row-span-1" },
-  { src: "./gallery2.jpg", cols: "col-span-8", rows: "row-span-1" },
-  { src: "./gallery9.jpg", cols: "col-span-7", rows: "row-span-1" },
-  { src: "./gallery10.jpg", cols: "col-span-5", rows: "row-span-1" },
 
+
+export const photos: Photo[] = [
+  { id: 1, src: "./headar1.jpg", alt: "Photo 1" },
+  { id: 2, src: "./headar2.jpg", alt: "Photo 2" },
+  { id: 3, src: "./headar3.jpg", alt: "Photo 3" },
+  { id: 4, src: "./headar4.jpg", alt: "Photo 4" },
 ];
-
 
 export const services = [
   {

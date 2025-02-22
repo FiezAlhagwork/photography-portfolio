@@ -6,22 +6,9 @@ import { animationVariants } from "../utils";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import { GrView } from "react-icons/gr";
+import { photos } from "../constant";
 
-const photos: Photo[] = [
-  { id: 1, src: "./headar1.jpg", alt: "Photo 1" },
-  { id: 2, src: "./headar2.jpg", alt: "Photo 2" },
-  { id: 3, src: "./headar3.jpg", alt: "Photo 3" },
-  { id: 4, src: "./headar4.jpg", alt: "Photo 4" },
-  { id: 5, src: "./headar1.jpg", alt: "Photo 5" },
-  { id: 6, src: "./headar2.jpg", alt: "Photo 6" },
-  { id: 7, src: "./headar4.jpg", alt: "Photo 4" },
-  { id: 8, src: "./headar1.jpg", alt: "Photo 5" },
-  { id: 9, src: "./headar2.jpg", alt: "Photo 6" },
-  { id: 10, src: "./headar2.jpg", alt: "Photo 6" },
-  { id: 11, src: "./headar4.jpg", alt: "Photo 4" },
-  { id: 12, src: "./headar1.jpg", alt: "Photo 5" },
-  { id: 13, src: "./headar2.jpg", alt: "Photo 6" },
-];
+
 
 export default function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null); // الحالة لتحديد الصورة
@@ -112,6 +99,7 @@ export default function PhotoGallery() {
             <img
               src={photo.src}
               alt={photo.alt}
+              loading="lazy" 
               className="w-full h-[270px] rounded-lg shadow-md object-fill "
             />
           </motion.div>

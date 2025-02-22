@@ -10,6 +10,7 @@ export interface ButtonProps {
   type?: "button" | "submit" | "reset";
   onclick?: () => void;
   children: React.ReactNode;
+  aria_label:string
 }
 
 export interface Photo {

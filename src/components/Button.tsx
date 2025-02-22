@@ -6,6 +6,7 @@ const Button = ({
   type = "button",
   onclick,
   children,
+  aria_label
 }: ButtonProps) => {
   return (
     <button
@@ -13,6 +14,7 @@ const Button = ({
       disabled={disabled || false}
       className={` py-2 px-6 rounded-full my-1  text-sm    ${className}`}
       onClick={onclick}
+      aria-label={aria_label}
     >
       {children}
     </button>

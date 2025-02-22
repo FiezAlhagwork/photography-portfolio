@@ -94,8 +94,9 @@ const Contact = () => {
         <div className=" max-w-80  md:ml-10 max-md:py-6 relative grid  ">
           <img
             src="./Misc.png"
-            alt=""
+            alt="Misc"
             className=" absolute -top-6 -left-9 max-md:-top-1 max-md:-left-7 w-10 h-10"
+
           />
           <h2 className="text-4xl text-Smoke_White font-libre font-bold leading-[44px] ">
             {" "}
@@ -114,7 +115,7 @@ const Contact = () => {
               placeholder="Full Name"
               type="text"
               coustomClassDiv="rounded-t-xl"
-              icon={<img src="./InputIcon.png" className="w-4 h-4" />}
+              icon={<img src="./InputIcon.png" alt="inputIcon"  className="w-4 h-4" loading="lazy" />}
               value={formData.fullname}
               name="fullname"
               onChange={handleChange}
@@ -122,7 +123,7 @@ const Contact = () => {
             <TextField
               placeholder="Email Address"
               type="email"
-              icon={<img src="./InputIcon.png" className="w-4 h-4" />}
+              icon={<img src="./InputIcon.png" className="w-4 h-4" alt="inputIcon2" loading="lazy" />}
               name="email"
               onChange={handleChange}
               value={formData.email}
@@ -130,7 +131,7 @@ const Contact = () => {
             <TextField
               placeholder="Phone Number"
               type="text"
-              icon={<img src="./InputIcon.png" className="w-4 h-4" />}
+              icon={<img src="./InputIcon.png" className="w-4 h-4" alt="inputIcon3" loading="lazy" />}
               name="phoneNumber"
               onChange={handleChange}
               value={formData.phoneNumber}
@@ -156,6 +157,7 @@ const Contact = () => {
               type="submit"
               className="text-Black bg-Yellow w-full font-medium"
               disabled={loading}
+              aria_label="send"
             >
               Submit
             </Button>
