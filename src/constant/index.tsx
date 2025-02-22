@@ -64,6 +64,48 @@ export const photos: Photo[] = [
   { id: 4, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar4_el3pht.jpg", alt: "Photo 4" },
 ];
 
+export const Photos1:Photo[] = [
+  { id: 1, src: "./IMG_9107.JPG", alt: "Photo 1" },
+  { id: 2, src: "./IMG_7798.JPG", alt: "Photo 2" },
+  { id: 3, src: "./IMG_6888.JPG", alt: "Photo 3" },
+  { id: 4, src: "./IMG_5740.jpg", alt: "Photo 4" },
+  { id: 5, src: "./IMG_5588.JPG", alt: "Photo 5" },
+  { id: 6, src: "./IMG_5552.JPG", alt: "Photo 6" },
+  { id: 7, src: "./IMG_5507.JPG", alt: "Photo 7" },
+  { id: 8, src: "./DSC09537.JPG", alt: "Photo 8" },
+  { id: 9, src: "./DSC09503.JPG", alt: "Photo 9" },
+  { id: 10, src: "./DSC09498.JPG", alt: "Photo 10" },
+  { id: 11, src: "./DSC09490.JPG", alt: "Photo 11" },
+  { id: 12, src: "./DSC09453.JPG", alt: "Photo 12" },
+  { id: 13, src: "./DSC09217.jpg", alt: "Photo 13" },
+  { id: 14, src: "./20240703175959_IMG_8687.JPG", alt: "Photo 14" },
+  { id: 15, src: "./20240703175959_IMG_8687.JPG", alt: "Photo 15" },
+]
+//REELS
+export const Photos2:Photo[] = [
+  { id: 1, src: "./IMG_7835.JPG", alt: "Photo 1" },
+  { id: 11, src: "./IMG_5652.JPG", alt: "Photo 11" },
+  { id: 2, src: "./IMG_7830.JPG", alt: "Photo 2" },
+  { id: 3, src: "./IMG_7802.JPG", alt: "Photo 3" },
+  { id: 4, src: "./IMG_7790.JPG", alt: "Photo 4" },
+  { id: 5, src: "./IMG_7781.JPG", alt: "Photo 5" },
+  { id: 6, src: "./IMG_5914.JPG", alt: "Photo 6" },
+  { id: 7, src: "./IMG_5890.JPG", alt: "Photo 7" },
+  { id: 8, src: "./IMG_5781.JPG", alt: "Photo 8" },
+  { id: 9, src: "./IMG_5751.JPG", alt: "Photo 9" },
+  { id: 10, src: "./IMG_5677.JPG", alt: "Photo 10" },
+  { id: 12, src: "./DSC09185.jpg", alt: "Photo 12" },
+  { id: 13, src: "./DSC08805.JPG", alt: "Photo 13" },
+  { id: 14, src: "./DSC08805.JPG", alt: "Photo 14" },
+  { id: 15, src: "./DSC08803.JPG", alt: "Photo 15" },
+  { id: 16, src: "./DSC08802.JPG", alt: "Photo 16" },
+  { id: 17, src: "./DSC08800.JPG", alt: "Photo 17" },
+  { id: 18, src: "./DSC08799.JPG", alt: "Photo 18" },
+  { id: 19, src: "./DSC08798.JPG", alt: "Photo 19" },
+  { id: 20, src: "./DSC08797.JPG", alt: "Photo 20" },
+  { id: 21, src: "./20240703175912_IMG_8686.jpg", alt: "Photo 21" },
+]
+
 export const services = [
   {
     id: 1,

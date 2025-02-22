@@ -57,3 +57,10 @@ export interface VideoGalleryProps {
   videos:videos[]
   slidesPerView:number[]
 }
+
+
+export interface PhotosGalleryProps {
+  heightPhotos:string
+  photos:Photo[]
+  slidesPerView:number[]
+}

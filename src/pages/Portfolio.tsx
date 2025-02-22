@@ -1,7 +1,8 @@
 
-import { videoProjects, videoProjects2 } from '../constant';
+import { photos, Photos1, Photos2, videoProjects, videoProjects2 } from '../constant';
 import 'swiper/swiper-bundle.css';
 import VideoGallery from '../components/VideoGallery';
+import PhotosSection from '../components/PhotosSection';
 
 
 const Portfolio = () => {
@@ -21,6 +22,15 @@ const Portfolio = () => {
         <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> Video</h1>
         <VideoGallery videos={videoProjects2} heightVideo='h-[300px]' slidesPerView={[1,1,2,3]}/>
       </div>
+      <div className="my-5">
+        <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> photos</h1>
+        <PhotosSection photos={Photos2} heightPhotos='h-[600px]' slidesPerView={[1,1,2,3]}/>
+      </div>
+      <div className="my-5">
+        <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> photos</h1>
+        <PhotosSection photos={Photos1} heightPhotos='h-[300px]' slidesPerView={[1,1,2,3]}/>
+      </div>
+
     </div>
   )
 }
