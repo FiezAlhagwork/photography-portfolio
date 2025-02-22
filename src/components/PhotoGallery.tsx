@@ -120,7 +120,8 @@ export default function PhotoGallery() {
             <Button
               onclick={showMore}
               className="px-6 py-2 bg-Yellow text-Black rounded-lg hover:bg font-Montserrat font-semibold shadow-lg"
-            >
+              aria_label="Show More"
+            > 
               Show More
             </Button>
           </motion.div>

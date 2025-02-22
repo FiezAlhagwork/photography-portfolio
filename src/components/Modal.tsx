@@ -18,6 +18,7 @@ const Modal = ({ message, onClose }: ModalProps) => {
         <Button
           onclick={onClose}
           className="mt-4 bg-Yellow text-Black px-4 py-2 rounded text-center font-Montserrat font-medium"
+          aria_label="ok"
         >
           OK
         </Button>
