@@ -1,5 +1,5 @@
 
-import { photos, Photos1, Photos2, videoProjects, videoProjects2 } from '../constant';
+import { Photos1 , Photos2, videoProjects, videoProjects2 } from '../constant';
 import 'swiper/swiper-bundle.css';
 import VideoGallery from '../components/VideoGallery';
 import PhotosSection from '../components/PhotosSection';
