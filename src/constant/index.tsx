@@ -58,10 +58,10 @@ export const Accordions = [
 
 
 export const photos: Photo[] = [
-  { id: 1, src: "./headar1.jpg", alt: "Photo 1" },
-  { id: 2, src: "./headar2.jpg", alt: "Photo 2" },
-  { id: 3, src: "./headar3.jpg", alt: "Photo 3" },
-  { id: 4, src: "./headar4.jpg", alt: "Photo 4" },
+  { id: 1, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216109/headar1_qla04i.jpg", alt: "Photo 1" },
+  { id: 2, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar2_aybyx7.jpg ", alt: "Photo 2" },
+  { id: 3, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar3_upqqbn.jpg", alt: "Photo 3" },
+  { id: 4, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar4_el3pht.jpg", alt: "Photo 4" },
 ];
 
 export const services = [
@@ -126,38 +126,37 @@ export const videoProjects:videos[] = [
   {
     id: 1,
     title: 'مشروع فيديو 1',
-    thumbnail: './reels3.PNG',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216165/reels3_dmevqa.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698898/lv_7320806994355571986_20240902015420_s818ar.mp4'
   },
   {
     id: 2,
     title: 'مشروع فيديو 2',
-    thumbnail: './reels.PNG',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216195/reels_bldssa.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698703/lv_7227878550014151942_20240921020605_ncvfuo.mp4'
-              // "https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698703/lv_7227878550014151942_20240921020605_ncvfuo.mp4"
   },
   {
     id: 3,
     title: 'مشروع فيديو 3',
-    thumbnail: './reels4.PNG',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216163/reels4_zpdptu.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739696366/lv_0_20240602193947_b7fnmx.mp4'
   },
   {
     id: 4,
     title: 'مشروع فيديو 4',
-    thumbnail: './reels1.PNG',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216160/reels1_dhpmfz.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698534/lv_0_20240726220901_z4wwut.mp4'
   },
   {
     id: 5,
     title: 'مشروع فيديو 5',
-    thumbnail: './reels5.PNG',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216163/reels5_kc7bxp.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698358/lv_0_20240717181229_dxnzwx.mp4'
   },
   {
     id: 6,
     title: 'مشروع فيديو 6',
-    thumbnail: './reels6.PNG',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216149/reels6_wy2fvf.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698245/lv_0_20240715165717_bi18fp.mp4'
   },
 ];
@@ -166,20 +165,20 @@ export const videoProjects2:videos[] = [
   {
     id: 1,
     title: 'مشروع فيديو 1',
-    thumbnail: './video1.PNG',
-    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1739692525/bozy_i0bodd.mp4  '
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216180/video1_dbmcai.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739692525/bozy_i0bodd.mp4  '
   },
   {
     id: 2,
     title: 'مشروع فيديو 2',
-    thumbnail: './video2.PNG',
-    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1740062612/Sequence_06_zqm8jk.mp4'
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216149/video2_kcqtto.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1740062612/Sequence_06_zqm8jk.mp4'
   },
   {
     id: 3,
     title: 'مشروع فيديو 3',
-    thumbnail: './video3.PNG',
-    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/v1740062805/Sequence_04_untofo.mp4'
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216179/video3_iix9dl.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1740062805/Sequence_04_untofo.mp4'
   },
 
 ];

@@ -149,6 +149,7 @@ export default function PhotoGallery() {
               src={selectedPhoto.src}
               alt={selectedPhoto.alt}
               className="w-full max-h-[70vh] object-contain rounded-lg mb-4"
+              
             />
           )}
 

@@ -9,7 +9,7 @@ const Testimonial = () => {
         <div className="flex justify-between items-center px-4">
           <div className="flex gap-3 items-center   ">
             <h2 className="font-libre text-2xl font-semibold">Testimonial</h2>
-            <img src="./small.png" alt="" className="w-9  h-5" />
+            <img src="https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto/q_auto/v1740216134/small_roasrr.png" alt="" className="w-9  h-5" />
           </div>
 
           <div className="flex gap-2 items-center">

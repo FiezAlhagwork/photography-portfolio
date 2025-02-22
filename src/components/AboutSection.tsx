@@ -92,7 +92,7 @@ const AboutSection = () => {
          transition={{ duration: 0.8 }}   
          viewport={{ once: true, amount: 0.2 }} 
          >
-            <img src="./abd.jpg" className="w-[500px] h-[600px] object-contain" loading="lazy" alt="image" />
+            <img src="https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto/q_auto/v1740216107/abd_zyxyff.jpg" className="w-[500px] h-[600px] object-contain" loading="lazy" alt="image" />
         </motion.div>
         
       </motion.div>

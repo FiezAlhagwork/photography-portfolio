@@ -12,7 +12,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="bg-White border-b border-gray-400 py-3 ">
+    <div className="bg-White border-b border-Grey py-3 ">
       <div className="containers flex justify-between items-center  ">
         {/* navbar in mobile */}
         <ul className={`lg:flex items-center gap-3  hidden`}>
@@ -73,9 +73,9 @@ const Navbar = () => {
           </button>
           {navbar.map((item) => {
             return (
-              <li>
+              <li key={item.id}>
                 <Link
-                  key={item.id}
+                  
                   to={item.Link}
                   className=" hover:text-Yellow transition-colors duration-100 block text-White text-3xl font-libre font-medium py-3"
                 >
