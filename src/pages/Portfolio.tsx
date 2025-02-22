@@ -24,7 +24,7 @@ const Portfolio = () => {
       </div>
       <div className="my-5">
         <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> photos</h1>
-        <PhotosSection photos={Photos2} heightPhotos='h-[600px]' slidesPerView={[1,1,2,3]}/>
+        <PhotosSection photos={Photos2} heightPhotos='h-[600px]' slidesPerView={[1,2,3,4]}/>
       </div>
       <div className="my-5">
         <h1 className=" text-Black font-Montserrat font-extrabold text-3xl max-md:text-xl py-5  "> photos</h1>
