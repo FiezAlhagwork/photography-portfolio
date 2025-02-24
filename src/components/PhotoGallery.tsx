@@ -14,6 +14,9 @@ export default function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null); // الحالة لتحديد الصورة
   const [isOpen, setIsOpen] = useState<boolean>(false); // الحالة لفتح/إغلاق النافذة
   const [visibleCount, setVisibleCount] = useState(8);
+  const [loadedImages, setLoadedImages] = useState<{ [key: number]: boolean }>(
+    {}
+  );
 
   const showMore = () => {
     setVisibleCount((prevCount) => Math.min(prevCount + 4, photos.length));
@@ -80,7 +83,7 @@ export default function PhotoGallery() {
         {photos.slice(0, visibleCount).map((photo) => (
           <motion.div
             key={photo.id}
-            className="cursor-pointer relative"
+            className="cursor-pointer relative w-full h-full"
             onClick={() => openModal(photo)}
             variants={animationVariants}
             custom="left"
@@ -90,17 +93,23 @@ export default function PhotoGallery() {
             viewport={{ once: true, amount: 0.2 }}
  
           >
+              {!loadedImages[photo.id] && (
+                <div className="absolute inset-0 bg-gray-300 animate-pulse rounded-lg"></div>
+              )}
             <motion.div className="group flex justify-center items-center  w-full  h-[270px] absolute hover:bg-opacity-30  0 z-10 top-0 left-0 hover:bg-gray-500 rounded-lg transition-all duration-400 ">
               <GrView
                 size={30}
-                className=" hidden font-bold text-White z-20  group-hover:block"
+                className={` ${loadedImages[photo.id] ? "opacity-100" : "opacity-0"} hidden font-bold text-White z-20  group-hover:block`}
               />
             </motion.div>
             <img
               src={photo.src}
               alt={photo.alt}
               loading="lazy" 
-              className="w-full h-[270px] rounded-lg shadow-md object-fill "
+              className={`w-full h-[270px] rounded-lg shadow-md object-fill ${loadedImages[photo.id] ? "opacity-100" : "opacity-0"} `}
+              onLoad={() =>
+                setLoadedImages((prev) => ({ ...prev, [photo.id]: true }))
+              }
             />
           </motion.div>
         ))}
