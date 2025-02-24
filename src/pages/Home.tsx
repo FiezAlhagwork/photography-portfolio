@@ -3,6 +3,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Gallery from "../components/Gallery"
 import Hero from "../components/Hero"
+import ScrollToTop from "../components/ScrollToTop"
 import Services from "../components/Services"
 import Testimonial from "../components/Testimonial"
 
@@ -18,6 +19,7 @@ const Home = () => {
         <Testimonial/>
         <Contact/>
         <Footer/>
+        <ScrollToTop/>
     </>
   )
 }
