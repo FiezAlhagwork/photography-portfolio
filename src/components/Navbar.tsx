@@ -73,7 +73,7 @@ const Navbar = () => {
           </button>
           {navbar.map((item) => {
             return (
-              <li key={item.id}>
+              <li key={item.id} onClick={toggleMenu}>
                 <Link
                   
                   to={item.Link}
