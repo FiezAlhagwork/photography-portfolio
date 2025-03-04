@@ -38,13 +38,13 @@ const AboutSection = () => {
               Hello! I'm Abdullah
             </h2>
             <p className="pt-1 pb-5 font-extralight text-lg">
-              A connoisseur of cityscapes and a storyteller through the lens,
-              based in the vibrant heart of Damascus.{" "}
+             a passionate photographer and video editor with a keen eye for capturing and enhancing visual moments. I have extensive experience working with professional cameras and editing software such as Adobe Premiere Pro, DaVinci Resolve, and Photoshop, allowing me to create high-quality content that meets clients' needs and creative visions..{" "}
             </p>
-            <p className=" font-extralight text-lg">
-              With over a decade of experience, I have been capturing the
-              essence of urban life, one frame at a time.
-            </p>
+            {/* <p className=" font-extralight text-lg">
+            I specialize in selecting the perfect angles and lighting, mastering color grading, and adding cinematic effects to bring out the best in every shot. I am always eager to improve my skills and stay up-to-date with the latest techniques and trends in photography and video editing.
+
+
+            </p> */}
           </div>
 
             {/*================= start Accordions =============== */}
@@ -84,7 +84,7 @@ const AboutSection = () => {
         </motion.div>
 
         <motion.div 
-         className="relative lg:ml-16 order-1 py-5"
+         className="relative lg:ml-16 order-1 py-5 rounded-md"
          variants={animationVariants} 
          custom="left" 
          initial="hidden"
@@ -92,7 +92,7 @@ const AboutSection = () => {
          transition={{ duration: 0.8 }}   
          viewport={{ once: true, amount: 0.2 }} 
          >
-            <img src="https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto/q_auto/v1740216107/abd_zyxyff.jpg" className="w-[500px] h-[600px] object-contain" loading="lazy" alt="image" />
+            <img src="./DSC02192.jpg" className="w-[500px] h-[600px] object-contain " loading="lazy" alt="image" />
         </motion.div>
         
       </motion.div>

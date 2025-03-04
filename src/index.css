@@ -76,11 +76,11 @@
 
 /* تغيير لون النقطة النشطة */
 .swiper-pagination-bullet-active {
-  background-color: #FEE400 !important;
+  background-color: black !important;
 }
 
 /* تغيير لون أسهم التنقل إلى الأصفر */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #FEE400 !important;
+  color: black !important;
 }

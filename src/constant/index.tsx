@@ -33,19 +33,19 @@ export const Accordions = [
     id: 1,
     nameAccordin: "journey",
     section:
-      " My photography journey began on the bustling streets of London,starting as a hobby and quickly blossoming into a fervent passion.",
+      "My passion for photography began with capturing moments and turning them into compelling visual stories. Over time, I honed my skills in photography and editing using software like Photoshop, Premiere Pro, and DaVinci Resolve, allowing me to enhance visuals and add creative touches.",
   },
   {
     id: 2,
     nameAccordin: "philosophy",
     section:
-      " My photography journey began on the bustling streets of London,starting as a hobby and quickly blossoming into a fervent passion.",
+      " I believe that every picture tells a story, and every video captures an emotion. My approach to photography and video editing is not just about technical precision but about creating visuals that resonate with people. For me, lighting, composition, and colors are tools to enhance the essence of a moment. In editing, I focus on bringing life to raw footage, using color grading, transitions, and effects to create an immersive experience. Creativity and storytelling are at the heart of my work. Whether it's a simple portrait or a cinematic video, my goal is to capture authenticity and emotion, ensuring that every frame leaves a lasting impact.",
   },
   {
     id: 3,
     nameAccordin: "accolades",
     section:
-      " My photography journey began on the bustling streets of London,starting as a hobby and quickly blossoming into a fervent passion.",
+      " I have worked on successful projects in both personal and commercial photography, gaining extensive experience in capturing moments with a professional touch , I have participated in producing promotional and advertising videos for brands and organizations, helping to convey their messages in creative ways , I have refined my video editing and color grading techniques, giving my work a cinematic quality and strong visual impact.",
   },
   {
     id: 4,
@@ -58,9 +58,15 @@ export const Accordions = [
 
 
 export const photos: Photo[] = [
-  { id: 1, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216109/headar1_qla04i.jpg", alt: "Photo 1" },
-  { id: 2, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar2_aybyx7.jpg ", alt: "Photo 2" },
-  { id: 3, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar3_upqqbn.jpg", alt: "Photo 3" },
+
+  { id: 1, src: "./DSC01278.jpg", alt: "Photo 1" },
+  { id: 2, src: "./DSC01202.jpg", alt: "Photo 2" },
+  { id: 3, src: "./DSC01248.jpg", alt: "Photo 3" },
+  { id: 20, src: "./DSC01252.jpg", alt: "Photo 20" },
+  { id: 21, src: "./DSC01267.jpg", alt: "Photo 21" },
+  { id: 22, src: "./DSC01278.jpg", alt: "Photo 22" },
+  { id: 23, src: "./DSC01307_1.jpg", alt: "Photo 23" },
+  { id: 24, src: "./DSC01175.jpg", alt: "Photo 24" },
   { id: 4, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216108/headar4_el3pht.jpg", alt: "Photo 4" },
   { id: 5, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740390605/IMG_9621_sw7cjq.jpg", alt: "Photo 5" },
   { id: 6, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740390611/IMG_9593_ctd4bl.jpg", alt: "Photo 6" },

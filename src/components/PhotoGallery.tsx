@@ -128,7 +128,7 @@ export default function PhotoGallery() {
           >
             <Button
               onclick={showMore}
-              className="px-6 py-2 bg-Yellow text-Black rounded-lg hover:bg font-Montserrat font-semibold shadow-lg"
+              className="px-6 py-2 bg-Yellow text-white rounded-lg hover:bg font-Montserrat font-semibold shadow-lg"
               aria_label="Show More"
             > 
               Show More
@@ -164,13 +164,13 @@ export default function PhotoGallery() {
 
           <div className="flex space-x-4">
             <button
-              className="bg-Yellow  text-Black px-4 py-2 rounded-lg shadow-lg font-Montserrat font-medium"
+              className="bg-Yellow  text-White px-4 py-2 rounded-lg shadow-lg font-Montserrat font-medium"
               onClick={showPrevious}
             >
               Prev
             </button>
             <button
-              className="bg-Yellow text-Black px-4 py-2 rounded-lg shadow-lg font-Montserrat font-medium"
+              className="bg-Yellow text-white px-4 py-2 rounded-lg shadow-lg font-Montserrat font-medium"
               onClick={showNext}
             >
               Next

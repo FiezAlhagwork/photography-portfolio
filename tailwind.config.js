@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        Yellow:"#FEE400",
+        Yellow:"#da627d",
         Black:"#222021",
         Grey:"#D6D7DD",
         Smoke_White:"#F8F8F8",
@@ -20,3 +20,5 @@ export default {
   },
   plugins: [],
 }}
+
+// 450920

@@ -32,9 +32,9 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="lg:ml-20 flex justify-center items-center flex-col ">
-          <h4 className="font-libre "> Abdullah</h4>
+          <h4 className="font-libre font-medium uppercase "> abdullah</h4>
           <p className="text-[13px] text-gray-900 uppercase">
-            street photography
+             photography
           </p>
         </div>
 
