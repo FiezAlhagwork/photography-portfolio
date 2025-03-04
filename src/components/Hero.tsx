@@ -43,7 +43,7 @@ const Hero = () => {
         {/* Header images */}
         <div className="mt-20 mb-9 flex gap-6  flex-wrap lg:flex-nowrap">
           <motion.img
-            src="./DSC02214.JPG"
+            src="./photo_2025-03-04_22-04-44.jpg"
             className="lg:w-[550px] h-[590px] w-full object-fill  rounded-lg shadow-xl  "
             loading="lazy"
             variants={animationVariants}
@@ -55,7 +55,7 @@ const Hero = () => {
             alt="image"
           />
           <motion.img
-            src="./DSC02216.JPG"
+            src="./photo_2025-03-04_22-05-39.jpg"
             className="lg:w-[500px] h-[590px] w-full object-fill rounded-lg shadow-xl "
             alt="image"
             loading="lazy"
@@ -69,7 +69,7 @@ const Hero = () => {
           <div className="flex flex-col gap-2 md:gap-6 w-full">
             <motion.img
               
-              src="./DSC09217.jpg"
+              src="./photo_2025-03-04_22-06-37.jpg"
               className="lg:w-[530px] h-[277px] w-full   rounded-lg shadow-xl "
               alt="image"
               variants={animationVariants}
@@ -81,7 +81,7 @@ const Hero = () => {
               loading="lazy"
             />
             <motion.img
-              src="./IMG_5740.jpg"
+              src="./photo_2025-03-04_22-06-32.jpg"
               className="lg:w-[530px] h-[295px] w-full object-fill rounded-lg shadow-xl "
               alt="image"
               loading="lazy"

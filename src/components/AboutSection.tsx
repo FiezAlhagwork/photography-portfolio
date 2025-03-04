@@ -92,7 +92,7 @@ const AboutSection = () => {
          transition={{ duration: 0.8 }}   
          viewport={{ once: true, amount: 0.2 }} 
          >
-            <img src="./DSC02192.jpg" className="w-[500px] h-[600px] object-contain " loading="lazy" alt="image" />
+            <img src="./photo_2025-03-04_22-05-35.jpg" className="w-[500px] h-[600px] object-contain " loading="lazy" alt="image" />
         </motion.div>
         
       </motion.div>
