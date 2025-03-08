@@ -21,28 +21,38 @@ const Navbar = () => {
               <li key={item.id}>
                 <Link
                   to={item.Link}
-                  className=" hover:text-Yellow transition-colors duration-100 block font-Montserrat  "
+                  className=" capitalize hover:text-Yellow transition-colors duration-100 block font-Montserrat"
                 >
                   {item.name}
                 </Link>
               </li>
             );
           })}
+
+          <li>
+            <a
+              href="#about"
+              className=" capitalize hover:text-Yellow transition-colors duration-100 block font-Montserrat"
+            >
+              about
+            </a>
+          </li>
         </ul>
 
         {/* Logo */}
         <div className="lg:ml-20 flex justify-center items-center flex-col ">
-          <h4 className="font-libre font-medium uppercase "> abdullah</h4>
-          <p className="text-[13px] text-gray-900 uppercase">
-             photography
-          </p>
+          <h4 className="font-libre font-medium"> AbdUllah</h4>
+          <p className="text-[13px] text-gray-900 uppercase">photography</p>
         </div>
 
         {/* socialMedia */}
         <ul className="hidden  lg:flex gap-4 items-center ">
           {socialMedia.map((item) => {
             return (
-              <li  key={item.id} className="w-10 h-10 border-2 border-Black flex justify-center items-center rounded-full hover:bg-Black hover:text-White transition-colors duration-200">
+              <li
+                key={item.id}
+                className="w-10 h-10 border-2 border-Black flex justify-center items-center rounded-full hover:bg-Black hover:text-White transition-colors duration-200"
+              >
                 <a
                   key={item.id}
                   href={item.link}
@@ -75,7 +85,6 @@ const Navbar = () => {
             return (
               <li key={item.id} onClick={toggleMenu}>
                 <Link
-                  
                   to={item.Link}
                   className=" hover:text-Yellow transition-colors duration-100 block text-White text-3xl font-libre font-medium py-3"
                 >
@@ -84,6 +93,15 @@ const Navbar = () => {
               </li>
             );
           })}
+
+          <li onClick={toggleMenu}>
+            <a
+              href="#about"
+              className=" hover:text-Yellow transition-colors duration-100 block text-White text-3xl font-libre font-medium py-3"
+            >
+              about
+            </a>
+          </li>
         </ul>
 
         <div className="lg:hidden" onClick={toggleMenu}>

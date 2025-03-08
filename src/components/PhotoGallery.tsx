@@ -105,7 +105,7 @@ export default function PhotoGallery() {
             <img
               src={photo.src}
               alt={photo.alt}
-              loading="lazy" 
+              
               className={`w-full h-[270px] rounded-lg shadow-md object-fill ${loadedImages[photo.id] ? "opacity-100" : "opacity-0"} `}
               onLoad={() =>
                 setLoadedImages((prev) => ({ ...prev, [photo.id]: true }))

@@ -8,7 +8,6 @@ import { FaVideo, FaPalette, FaMagic, FaCamera, FaMobileAlt, FaBriefcase } from 
 
 export const navbar: NavBar[] = [
   { id: 1, Link: "/", name: "Home" },
-  { id: 2, Link: "/About", name: "About" },
   { id: 3, Link: "/portfolio", name: "portfolio" },
 ];
 
@@ -154,19 +153,19 @@ export const services = [
 
 export const testimonials = [
   {
-    text: "Oliver's unique eye for urban landscapes has brought our campaign to life. His ability to capture the soul of the city is unparalleled.",
+    text: "Honestly, the photos you captured are absolutely stunning! You managed to highlight the beauty of the dishes and every little detail in a way that makes anyone crave the food just by looking at them.",
     author: "Emily Clark",
-    role: "Marketing Director - Cityscape Magazine",
+    role: "Habak Restaurant",
   },
   {
-    text: "I hired Oliver for a personal photoshoot, and he exceeded all expectations. His work is not just photography; it's storytelling at its finest.",
+    text: "The photos you captured showcase incredible professionalism and creativity! Your ability to play with lighting and angles made every shot tell a story and grab attention. Your work added real value to the content and significantly enhanced the brand’s visual identity.",
     author: "Liam Thompson",
-    role: "Entrepreneur",
+    role: "address social media",
   },
   {
-    text: "Oliver's workshop opened my eyes to the beauty of urban photography. His guidance and techniques were invaluable. A true master of his craft!",
-    author: "Sarah Jenkins",
-    role: "Aspiring Photographer",
+    text: "Your creativity in filming the music video brought the song to life, transforming the lyrics into powerful and emotional visuals. The photoshoot was truly professional, capturing moments that reflect my personality and artistry in a unique way",
+    author: "Sharif Al-Khairy",
+    role: "Al-Khairy",
   },
 ];
 
@@ -208,6 +207,12 @@ export const videoProjects:videos[] = [
     thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216149/reels6_wy2fvf.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1739698245/lv_0_20240715165717_bi18fp.mp4'
   },
+  {
+    id: 7,
+    title: 'مشروع فيديو 7',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1741341098/abd17_cymn1i.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/f_auto,q_auto/v1741340702/lv_0_20240730151224_zvsbn5.mp4'
+  },
 ];
 
 export const videoProjects2:videos[] = [
@@ -228,6 +233,24 @@ export const videoProjects2:videos[] = [
     title: 'مشروع فيديو 3',
     thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216179/video3_iix9dl.png',
     videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1740062805/Sequence_04_untofo.mp4'
+  },
+  {
+    id: 4,
+    title: 'مشروع فيديو 4=',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1741341098/abd14_acjqtr.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/f_auto,q_auto/v1741340275/abd12_vxg3aa.mp4'
+  },
+  {
+    id: 5,
+    title: 'مشروع فيديو 5',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1741341102/abd16_kynupq.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/f_auto,q_auto/v1741340040/Timeline_1_rbea7m.mp4'
+  },
+  {
+    id: 6,
+    title: 'مشروع فيديو 6',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1741341098/abd15_h5aooo.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/f_auto,q_auto/v1741340572/C0010_1_ahrkgk.mp4'
   },
 
 ];

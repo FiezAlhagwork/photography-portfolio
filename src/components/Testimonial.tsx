@@ -30,7 +30,7 @@ const Testimonial = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
               key={index}
-              className="p-6 border-2 border-black bg-White shadow-lg min-h-52 cursor-pointer   "
+              className="p-6 border-2 border-black bg-White shadow-lg min-h-60 cursor-pointer   "
             >
               <p className="text-Black font-libre text-base cursor-pointer ">
                 "{item.text}"

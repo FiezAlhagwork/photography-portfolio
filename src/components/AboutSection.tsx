@@ -23,7 +23,7 @@ const AboutSection = () => {
   };
   return (
     <AnimatePresence>
-    <div className="bg-Smoke_White my-16">
+    <div id="about" className="bg-Smoke_White my-16">
       <motion.div className=" containers flex-col flex lg:flex-row justify-between items-center py-20    ">
 
         <motion.div className="lg:w-[450px] w-full text-center mx-16 order-2 " 

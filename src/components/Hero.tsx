@@ -1,3 +1,4 @@
+
 import { animationVariants } from "../utils";
 import Button from "./Button";
 import { motion } from "framer-motion";
@@ -32,19 +33,24 @@ const Hero = () => {
             </p>
 
             <Button
-              className="bg-Yellow text-White font-medium"
+              className="bg-Yellow text-White font-medium capitalize"
               aria_label="Discover"
+
             >
-              Discover my Journey
+              <a href="#about">
+                Discover my Journey
+              </a>
+              
+              
             </Button>
           </div>
         </motion.div>
 
         {/* Header images */}
-        <div className="mt-20 mb-9 flex gap-6  flex-wrap lg:flex-nowrap">
+        <div className="mt-20 mb-9 flex gap-6  flex-wrap xl:flex-nowrap">
           <motion.img
             src="./photo_2025-03-04_22-04-44.jpg"
-            className="lg:w-[550px] h-[590px] w-full object-fill  rounded-lg shadow-xl  "
+            className="lg:w-[390px] h-[590px] w-full object-fill max-lg:object-cover  rounded-lg shadow-xl  "
             loading="lazy"
             variants={animationVariants}
             custom="down"
@@ -56,7 +62,7 @@ const Hero = () => {
           />
           <motion.img
             src="./photo_2025-03-04_22-05-39.jpg"
-            className="lg:w-[500px] h-[590px] w-full object-fill rounded-lg shadow-xl "
+            className="lg:w-[390px] h-[590px] w-full object-fill max-lg:object-cover max-md:object-fill top-40  rounded-lg shadow-xl "
             alt="image"
             loading="lazy"
             variants={animationVariants}
@@ -68,9 +74,8 @@ const Hero = () => {
           />
           <div className="flex flex-col gap-2 md:gap-6 w-full">
             <motion.img
-              
               src="./photo_2025-03-04_22-06-37.jpg"
-              className="lg:w-[530px] h-[277px] w-full   rounded-lg shadow-xl "
+              className="lg:w-[530px] h-[277px] w-full rounded-lg shadow-xl "
               alt="image"
               variants={animationVariants}
               custom="down"
