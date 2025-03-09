@@ -101,7 +101,7 @@ export const Photos2:Photo[] = [
   { id: 4, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297450/IMG_5890_prrza1.jpg", alt: "Photo 4" },
   { id: 5, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297463/IMG_7781_dcke3z.jpg", alt: "Photo 5" },
   { id: 6, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297457/IMG_7790_fvurkm.jpg", alt: "Photo 6" },
-  { id: 7, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297457/IMG_7790_fvurkm.jpg", alt: "Photo 7" },
+  // { id: 7, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297457/IMG_7790_fvurkm.jpg", alt: "Photo 7" },
   { id: 8, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297378/IMG_5781_xnxqvd.jpg", alt: "Photo 8" },
   { id: 9, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740387651/IMG_5652_v1fpl9.jpg", alt: "Photo 9" },
   { id: 10, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740387692/IMG_5677_oluhrn.jpg", alt: "Photo 10" },

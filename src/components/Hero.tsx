@@ -47,10 +47,10 @@ const Hero = () => {
         </motion.div>
 
         {/* Header images */}
-        <div className="mt-20 mb-9 flex gap-6  flex-wrap xl:flex-nowrap">
+        <div className="mt-20 mb-9 flex gap-6  flex-wrap lg:flex-nowrap  md:flex-nowrap justify-center items-center  ">
           <motion.img
             src="./photo_2025-03-04_22-04-44.jpg"
-            className="lg:w-[390px] h-[590px] w-full object-fill max-lg:object-cover  rounded-lg shadow-xl  "
+            className="lg:w-[390px] h-[590px] bg-center w-full object-fill   rounded-lg shadow-xl  "
             loading="lazy"
             variants={animationVariants}
             custom="down"
@@ -62,7 +62,7 @@ const Hero = () => {
           />
           <motion.img
             src="./photo_2025-03-04_22-05-39.jpg"
-            className="lg:w-[390px] h-[590px] w-full object-fill max-lg:object-cover max-md:object-fill top-40  rounded-lg shadow-xl "
+            className="lg:w-[390px] h-[590px] w-full object-fill  max-md:object-fill top-40  rounded-lg shadow-xl "
             alt="image"
             loading="lazy"
             variants={animationVariants}
@@ -72,10 +72,10 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
           />
-          <div className="flex flex-col gap-2 md:gap-6 w-full">
+          <div className="flex flex-col lg:block  md:hidden   w-full">
             <motion.img
               src="./photo_2025-03-04_22-06-37.jpg"
-              className="lg:w-[530px] h-[277px] w-full rounded-lg shadow-xl "
+              className="lg:w-[530px] h-[277px] w-full rounded-lg shadow-xl mb-3 "
               alt="image"
               variants={animationVariants}
               custom="down"
