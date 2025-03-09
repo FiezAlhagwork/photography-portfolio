@@ -95,7 +95,7 @@ export const Photos1:Photo[] = [
 //REELS
 export const Photos2:Photo[] = [
   { id: 1, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297363/IMG_7830_dskrwf.jpg", alt: "Photo 1" },
-  { id: 11, src:"https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297368/IMG_7835_mjppcq.jpg", alt: "Photo 11" },
+  // { id: 11, src:"https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297368/IMG_7835_mjppcq.jpg", alt: "Photo 11" },
   { id: 2, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297377/IMG_7802_dyznz4.jpg", alt: "Photo 2" },
   { id: 3, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297444/IMG_5914_xxdmel.jpg", alt: "Photo 3" },
   { id: 4, src: "https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740297450/IMG_5890_prrza1.jpg", alt: "Photo 4" },
