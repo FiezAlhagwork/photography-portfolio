@@ -25,7 +25,6 @@ const Hero = () => {
             <img
               src="https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto/q_auto/v1740065433/image1_rf5tq4.png"
               className=" absolute w-60 h-4 right-5 "
-              loading="lazy"
               alt="image"
             />
             <p className="text-lg text-Black py-4 font-light font-Montserrat">
@@ -51,7 +50,6 @@ const Hero = () => {
           <motion.img
             src="./photo_2025-03-04_22-04-44.jpg"
             className="lg:w-[390px] h-[590px] bg-center w-full object-fill   rounded-lg shadow-xl  "
-            loading="lazy"
             variants={animationVariants}
             custom="down"
             initial="hidden"
@@ -64,7 +62,6 @@ const Hero = () => {
             src="./photo_2025-03-04_22-05-39.jpg"
             className="lg:w-[390px] h-[590px] w-full object-fill  max-md:object-fill top-40  rounded-lg shadow-xl "
             alt="image"
-            loading="lazy"
             variants={animationVariants}
             custom="down"
             initial="hidden"
@@ -83,13 +80,11 @@ const Hero = () => {
               whileInView="visible"
               transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
-              loading="lazy"
             />
             <motion.img
               src="./photo_2025-03-04_22-06-32.jpg"
               className="lg:w-[530px] h-[295px] w-full object-fill rounded-lg shadow-xl "
               alt="image"
-              loading="lazy"
               variants={animationVariants}
               custom="down"
               initial="hidden"
