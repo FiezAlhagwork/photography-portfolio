@@ -48,7 +48,7 @@ const Hero = () => {
         {/* Header images */}
         <div className="mt-20 mb-9 flex gap-6  flex-wrap lg:flex-nowrap  md:flex-nowrap justify-center items-center  ">
           <motion.img
-            src="./photo_2025-03-04_22-04-44.jpg"
+            src="./gallery10.jpg"
             className="lg:w-[390px] h-[590px] bg-center w-full object-fill   rounded-lg shadow-xl  "
             variants={animationVariants}
             custom="down"
@@ -69,7 +69,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
           />
-          <div className="flex flex-col lg:block  md:hidden   w-full">
+          <div className="flex flex-col lg:block  md:hidden  w-full">
             <motion.img
               src="./photo_2025-03-04_22-06-37.jpg"
               className="lg:w-[530px] h-[277px] w-full rounded-lg shadow-xl mb-3 "

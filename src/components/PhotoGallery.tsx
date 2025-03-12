@@ -85,12 +85,8 @@ export default function PhotoGallery() {
             key={photo.id}
             className="cursor-pointer relative w-full h-full"
             onClick={() => openModal(photo)}
-            variants={animationVariants}
-            custom="left"
-            initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.2 }}
+
+
  
           >
               {!loadedImages[photo.id] && (
@@ -102,7 +98,7 @@ export default function PhotoGallery() {
                 className={` ${loadedImages[photo.id] ? "opacity-100" : "opacity-0"} hidden font-bold text-White z-20  group-hover:block`}
               />
             </motion.div>
-            <img
+            <motion.img
               src={photo.src}
               alt={photo.alt}
               
