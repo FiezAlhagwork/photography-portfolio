@@ -1,4 +1,5 @@
-
+import { images } from "../constant";
+import { imageHero } from "../types";
 import { animationVariants } from "../utils";
 import Button from "./Button";
 import { motion } from "framer-motion";
@@ -34,20 +35,15 @@ const Hero = () => {
             <Button
               className="bg-Yellow text-White font-medium capitalize"
               aria_label="Discover"
-
             >
-              <a href="#about">
-                Discover my Journey
-              </a>
-              
-              
+              <a href="#about">Discover my Journey</a>
             </Button>
           </div>
         </motion.div>
 
         {/* Header images */}
-        <div className="mt-20 mb-9 flex gap-6  flex-wrap lg:flex-nowrap  md:flex-nowrap justify-center items-center  ">
-          <motion.img
+        <div className="mt-20 mb-9 flex gap-6  flex-wrap justify-center    ">
+          {/* <motion.img
             src="./gallery10.jpg"
             className="lg:w-[390px] h-[590px] bg-center w-full object-fill   rounded-lg shadow-xl  "
             variants={animationVariants}
@@ -92,7 +88,25 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
             />
-          </div>
+          </div> */}
+
+          {images.map((item: imageHero) => {
+            return (
+              <div className="lg:w-[430px] w-[400px] h-[295px] rounded-lg shadow-xl  ">
+                <motion.img
+                  src={item.img}
+                  className="w-full h-full object-fill rounded-lg "
+                  alt="image"
+                  variants={animationVariants}
+                  custom="down"
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -64,3 +64,8 @@ export interface PhotosGalleryProps {
   photos:Photo[]
   slidesPerView:number[]
 }
+
+export interface imageHero {
+  id:number
+  img:string
+}
