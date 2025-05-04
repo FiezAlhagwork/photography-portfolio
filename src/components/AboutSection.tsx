@@ -88,7 +88,7 @@ const AboutSection = () => {
           </motion.div>
           <div className="relative lg:ml-16 order-1 py-5 rounded-lg">
             <motion.div
-              className=" w-[500px] shadow-lg rounded-lg"
+              className=" lg:w-[500px] shadow-lg rounded-lg"
               variants={animationVariants}
               custom="left"
               initial="hidden"
@@ -98,7 +98,7 @@ const AboutSection = () => {
             >
               <img
                 src="./photo_2025-03-04_22-05-35.jpg"
-                className=" object-contain rounded-lg "
+                className=" object-contain rounded-lg w-full "
                 loading="lazy"
                 alt="image"
               />

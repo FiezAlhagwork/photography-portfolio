@@ -172,6 +172,24 @@ export const testimonials = [
 
 export const videoProjects:videos[] = [
   {
+    id: 9,
+    title: 'مشروع فيديو 9',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1746353246/photo3_ett601.png'  ,
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1746351469/MADRAMY_ke9sxp.mp4'
+  },
+  {
+    id: 8,
+    title: 'مشروع فيديو 8',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1746353244/photo2_cbv2sc.png'  ,
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1746350515/karkdeh_pjlqy6.mp4'
+  },
+  {
+    id: 7,
+    title: 'مشروع فيديو 7',
+    thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1746353449/photo1_gojjp3.png',
+    videoUrl: 'https://res.cloudinary.com/dtvf9kxxu/video/upload/q_auto,f_auto/v1746350050/rman_iden0p.mp4'
+  },
+  {
     id: 1,
     title: 'مشروع فيديو 1',
     thumbnail: 'https://res.cloudinary.com/dtvf9kxxu/image/upload/f_auto,q_auto/v1740216165/reels3_dmevqa.png',

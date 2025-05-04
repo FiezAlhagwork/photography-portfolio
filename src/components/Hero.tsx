@@ -92,7 +92,7 @@ const Hero = () => {
 
           {images.map((item: imageHero) => {
             return (
-              <div className="lg:w-[430px] w-[400px] h-[295px] rounded-lg shadow-xl  ">
+              <div className="lg:w-[430px] w-full h-[295px] rounded-lg shadow-xl  ">
                 <motion.img
                   src={item.img}
                   className="w-full h-full object-fill rounded-lg "

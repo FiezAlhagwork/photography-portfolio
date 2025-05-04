@@ -47,7 +47,7 @@ const VideoGallery = ({
                 className="w-full h-full object-cover rounded-lg"
                 preload="metadata"
               ></video>
-            ) : (
+            ):(
               <>
                 {/* Skeleton Placeholder عند تحميل الصورة */}
                 {!loadedImages[video.id] && (
