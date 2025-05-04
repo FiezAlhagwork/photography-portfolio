@@ -24,7 +24,7 @@ const AboutSection = () => {
           <motion.div
             className="lg:w-[450px] w-full text-center mx-16 order-2 "
             variants={animationVariants}
-            custom="right"
+            custom="down"
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.8 }}
@@ -90,7 +90,7 @@ const AboutSection = () => {
             <motion.div
               className=" lg:w-[500px] shadow-lg rounded-lg"
               variants={animationVariants}
-              custom="left"
+              custom="down"
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.8 }}
