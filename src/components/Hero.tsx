@@ -40,9 +40,9 @@ const Hero = () => {
             </Button>
           </div>
         </motion.div>
-
+        {/* flex gap-6  flex-wrap justify-center   */}
         {/* Header images */}
-        <div className="mt-20 mb-9 flex gap-6  flex-wrap justify-center    ">
+        <div className="mt-20 mb-9 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2   ">
           {/* <motion.img
             src="./gallery10.jpg"
             className="lg:w-[390px] h-[590px] bg-center w-full object-fill   rounded-lg shadow-xl  "

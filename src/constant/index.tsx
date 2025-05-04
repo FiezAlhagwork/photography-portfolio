@@ -281,6 +281,6 @@ export const images:imageHero[] = [
   {id:4, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110331/photo_6_2025-05-01_17-37-32_narvsc.jpg"},
   {id:5, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110335/photo_1_2025-05-01_17-37-32_icu2bn.jpg"},
   {id:6, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110344/photo_8_2025-05-01_17-37-32_clllch.jpg"},
-  {id:7, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110333/photo_4_2025-05-01_17-37-32_dwc108.jpg"},
-  {id:8, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110344/photo_5_2025-05-01_17-37-32_kvjjpi.jpg"},
+  // {id:7, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110333/photo_4_2025-05-01_17-37-32_dwc108.jpg"},
+  // {id:8, img:"https://res.cloudinary.com/dtvf9kxxu/image/upload/v1746110344/photo_5_2025-05-01_17-37-32_kvjjpi.jpg"},
 ]
